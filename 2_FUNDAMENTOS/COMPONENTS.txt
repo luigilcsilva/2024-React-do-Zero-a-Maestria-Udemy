@@ -1,0 +1,8 @@
+Convenção: pasta chamada "components". Nomes no formato FirstComponent.jsx
+
+Sempre precisa de tags de abertura e fechamento dentro do return.
+
+No jsx usamos className ao invés de class na tag HTML.
+
+Comentários no JSX:
+{ /* Algum comentário */}
