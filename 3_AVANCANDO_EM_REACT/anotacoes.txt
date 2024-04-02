@@ -1,0 +1,17 @@
+IMAGENS - PASTA PUBLIC
+<div>
+    <img src="/img1.jpg" alt="Paisagem"/>
+</div>
+
+IMAGENS - ASSETS
+import City from './assets/city.jpg'
+<div>
+    <img src={City} alt="Cidade"/>
+</div>
+
+HOOKS - useState
+import {useState} from "react"
+const [number, setNumber] = useState(15)
+
+<p>Valor: {number}</p>
+<button onClick={() => setNumber(25)}>Mudar state</button>

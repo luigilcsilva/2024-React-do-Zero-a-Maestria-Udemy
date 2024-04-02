@@ -1,8 +1,41 @@
-Convenção: pasta chamada "components". Nomes no formato FirstComponent.jsx
+Convenção de criação: 
+-> Pasta chamada "components"; 
+-> Nomes no formato FirstComponent.jsx
 
-Sempre precisa de tags de abertura e fechamento dentro do return.
+Sempre precisa de tags de abertura e fechamento dentro do return:
+return (
+        <>
+        </>
+    )
 
-No jsx usamos className ao invés de class na tag HTML.
+No jsx usamos className ao invés de class na tag HTML:
+<p className="teste">Meu texto</p>
 
 Comentários no JSX:
 { /* Algum comentário */}
+
+Template expressions:
+{ AlgumCódigoEmJs }
+
+Convenção de eventos:
+-> Funções geralmente têm o nome "handleAlgumaCoisa".
+Ex.:
+const Events = () => {
+
+    const handleMyEvent = (e) => {
+        console.log(e) //Imprime as informações do evento.
+        window.alert("Ativou o evento!")
+    }
+
+    return (
+        <div>
+            <div>
+                {/* Se colocar handleMyEvent() com parentêses,
+                ele dispara a função na leitura do código.*/}
+                <button onClick={handleMyEvent}>Clique aqui!</button>
+            </div>
+        </div>
+    )
+}
+
+export default Events
